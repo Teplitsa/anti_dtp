@@ -1,0 +1,38 @@
+<!--header -->
+        <div class="col-12 row ml-0">
+            <div class="col-10 row title">
+                <button id="loginformlogo" class="my-auto btn btn-blue btn-circle" style="margin-left: 0px;">
+                </button>
+                <p class="my-auto" style="margin-top: 5px; margin-left: 10px; font-size: 20px;"> Вход</p>
+            </div>
+            <div class="col-2 ml-auto p-0">
+                <button id="closeLoginMenu" onclick="hideLoginForm2()" class="btn float-right"
+                        style="background-color: transparent; border-color: transparent;" >
+                    <i class="material-icons" style="margin-top: 5px;color: #8E92A5;">clear</i>
+                </button>
+            </div>
+        </div>
+
+    <form class="tab-pane active text-option col-12 p-0" id="auth" role="tabpanel">
+        <div class="form-group form-group-login row">
+            <span>Email</span>
+            <input type="text" class="form-control input-form" id="email" name="email" value="" />
+        </div>
+        <div class="form-group form-group-login row">
+            <span>Пароль</span>
+            <input type="password" class="form-control input-form" id="password" name="password" value="" />
+            <!--<label id="loginerror"></label> //-->
+        </div>
+        <div class="row">
+            <input class="btn btn-blue col-6 text-white" id="loginSubmitButton" type="submit" value="ВОЙТИ">
+            <a class="col-6 my-auto text-center" href="#" onclick="switchformtofoget()">Забыли пароль?</a>
+        </div>
+    </form>
+    <span id="loginerror"></span>
+    <hr>
+ 
+    <div class="col-12">
+        <button class="m-0 btn switch_btn form-control" onclick="switchformtoreg()">
+        РЕГИСТРАЦИЯ
+        </button>
+    </div>

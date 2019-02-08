@@ -1,0 +1,89 @@
+<div class="load">
+  <hr/><hr/><hr/><hr/>
+</div>
+<!--header -->
+        <div class="col-12 row ml-0">
+            <div class="col-11 row title">
+                <button id="searchFormlogo" class="btn btn-blue btn-circle" style="margin-left: 0px;">
+                </button>
+                <p class="pt-1" style="margin-top: 5px; margin-left: 10px;">  
+                    Отбор данных
+                </p>
+            </div>
+            <div class="col-1 ml-auto p-0" style="padding-right: 0px;">
+                <button id="closeInfoMenu" onclick="hideMoreSearchForm()" class="btn float-right" 
+                         style="background-color: transparent; border-color: transparent;" >
+                    <i class="material-icons" style="margin-top: 5px;color: #8E92A5;">clear</i>
+                </button>
+            </div>
+        </div>
+<form class="searchform form-horizontal container col-12 p-0 text-option scroll" method="GET" id="moresearchform"
+style = "max-height: 400px;"
+>
+        <!--form-->
+        <div class="form-group row">
+            <span class="col-12 p-0">Даты происшествий</span>
+            <input type="text" class="form-control input-form" style="padding-left: 24px; width: 145px!important;" id="Date2" name="Date2" value="">
+            <label for="Date2"></label>
+            <input type="text" class="form-control input-form" style="padding-left: 32px; margin-left: 14px; width: 145px!important" id="Dateend2" name="Dateend2" value="">            
+            <label for="Dateend2"></label>
+        </div>
+        <div class="form-group row">
+            <span> Тип ДТП</span>
+
+            <select class="form-control selectpicker" id="Dtp_V2" name="Dtp_V2" multiple 
+			data-live-search="true"  data-actions-box="true"
+			title='выбраны все типы' data-width="auto" data-size='5'
+                        data-container='#moresearchForm'>
+                <option value=""></option>
+                {% for type in types %}
+                <option value="{{ type }}">{{ type }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group row">
+            <span>Количество участников не менее:</span>
+            <input type="number" class="form-control input-form" id="K_Uch" name="K_Uch" value="" />
+        </div>
+
+        <div class="form-group row">
+            <span>Пострадавших в ДТП не менее:</span>
+            <input type="number" class="form-control input-form" id="Ran" name="Ran" value="" />
+        </div>
+
+        <div class="form-group row">
+            <span>Погибших в ДТП не менее:</span>
+            <input type="number" class="form-control input-form" id="Pog" name="Pog" value="" />
+        </div>
+
+<!--        <div class="form-group row">
+            <span>Освещение:</span>
+            <input type="text" class="form-control input-form" id="Osv" name="Osv" value="" />
+        </div>
+
+        <div class="form-group row">
+            <span>Дорожное покрытие:</span>
+            <input type="text" class="form-control input-form" id="Sdor" name="Sdor" value="" />
+        </div> -->
+
+        <div class="row" style="position: relative;">
+            <input class="btn btn-blue col-12 text-white" id="searchMoreSubmitButton" type="submit" value="ОТОБРАЗИТЬ ДАННЫЕ">
+            <i id="spinner2" class="fa fa-spinner fa-spin spinner"></i>
+        </div>
+
+        <div class="row mx-auto">
+            <script src="static/mainmap/js/download.js"></script>
+            <a class="mx-auto" href="#" id="download_link2">
+                <b style="position: relative;">СКАЧАТЬ GEOJSON</b>
+                <span style="position: relative;" id="quntity2"></span>
+                <img src="/static/mainmap/icn/upload.png" width="18" height="18" style="margin-left: 10px; vertical-align: middle; margin-bottom: 2px;">
+            </a>
+        </div>
+        <div class="row mx-auto mt-1 pt-0 mb-2">
+            <a class="mx-auto" href="#" onclick="switchtosearch()"><u>ОБЫЧНЫЙ ОТБОР ДАННЫХ</u></a>
+        </div> 
+
+        <input type="hidden" id="latLong2" name="ll2" value="" />
+        <input type="hidden" id="zoom2" name="zoom2" value="" />
+</form>

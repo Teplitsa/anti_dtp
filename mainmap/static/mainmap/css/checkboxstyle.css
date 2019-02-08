@@ -1,0 +1,70 @@
+:root {
+	--primaryColor: #657eff;
+	--textColor: #666b69;
+	--backgroundColor: #333150;
+}
+
+/* Switch component */
+
+.Switch > span {
+	position: relative;
+	padding-left: 3.5em;
+}
+
+	.Switch > input[type='checkbox'] {
+		display: none;
+	}
+
+	.Switch > span:before {
+		background-color: var(--textColor);
+		border-radius: 1.2em;
+		border: .1em solid transparent;
+		content: '';
+		height: 1.2em;
+		left: 0;
+		overflow: hidden;
+		position: absolute;
+		top: .3em;
+		transition: background-color .1s;
+		width: 2.4em;
+	}
+
+	.Switch > span:after {
+		background-color: #e6f2ee;
+		border-radius: 50%;
+		border: .1em solid var(--textColor);
+		content: '';
+		height: 1.2em;
+		left: 0;
+		position: absolute;
+		top: .3em;
+		transition: border-color, transform .3s;
+		width: 1.2em;
+	}
+
+	.Switch > input:checked + span:before {
+		background-color: var(--primaryColor);
+	}
+
+	.Switch > input:checked + span:after {
+		border-color: var(--primaryColor);
+		transform: translateX(100%);
+	}
+/* Basics */
+		.layer_option {
+			border: 0;
+			margin: 0;
+			min-width: 0;
+			padding: .01em 0 0 0;
+		}
+
+			.layer_option > label {
+				align-items: baseline;
+				display: flex;
+				flex-flow: row wrap;
+				font-size: 1.em;
+				line-height: 1.7;
+				padding: .5em 0;
+				position: relative;
+				text-align: left;
+			}

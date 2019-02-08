@@ -1,0 +1,81 @@
+<!--header -->
+<div class="col-12 row ml-0">
+    <div class="col-10 row title">
+        <button id="infoFormlogo" class="btn btn-blue btn-circle" style="margin-left: 0px;">
+        </button>
+        <p class="pt-1" style="margin-top: 5px; margin-left: 10px;"> О проекте</p>
+    </div>
+    <div class="col-2 ml-auto p-0">
+        <button id="closeInfoMenu" onclick="hideInfoMenu()" class="btn float-right" style="background-color: transparent; border-color: transparent;" >
+            <i class="material-icons" style="margin-top: 5px; color:#8E92A5">clear</i>
+        </button>
+    </div>
+</div>
+
+<div class="col-12 p-0 scroll text" style="max-height: 460px;">
+    <div class="subtitle">
+        Для кого этот проект?
+    </div>
+    <div class="text" style="text-align: justify; text-indent: 20px;">
+        <p>АнтиДТП - проект для всех неравнодушных жителей Санкт-Петербурга, стремящихся снизить число смертей на дорогах города. Уменьшить число аварий с пострадавшими можно за счет работы с опасными участками: изменению в организации дорожного движения на них, устранении имеющихся недостатков. Данный сервис позволяет выявлять очаги ДТП, помогает координироваться местным жителям и экспертам, вырабатывать аргументированные запросы на изменение схем дорожного движения на конкретных участках.</p>
+        <p>В настоящий момент (декабрь 2018) сайт работает в тестовом режиме, по итогам которого будет расширен и доработан функционал.</p>
+        <p>Проект реализован при поддержке <a title="Теплица социальных технологий  технологии для гражданского общества" href="https://te-st.ru">Теплицы социальных технологий</a>.</p>
+        <br>
+        <p>Новости проекта: <a title="Новости проекта" href="https://t.me/antidtp_info">https://t.me/antidtp_info</a></p>
+        <p>Телеграм-чат активистов проекта: <a title="Телеграм-чат активистов проекта" href="https://t.me/antidtp">https://t.me/antidtp</a></p>
+        <p>Электронная почта: <a title="Электронная почта" href="antidtp.info@gmail.com">antidtp.info@gmail.com</a></p>
+        <br>
+        <p>Заявить о проблемном участке: <a title="Заявить о проблемном участке" href="https://goo.gl/eGwsdR">https://goo.gl/eGwsdR</a></p>
+    </div>
+    <hr style="margin: 16px 24px 16px 24px;">
+    <div class="row text-option" style="margin: 0;">
+        <span href="#infodata1" data-toggle="collapse" class="my-auto">
+            <i class="more-less fa fa-plus" style="top: 2px;"></i>
+            Откуда мы берем статистику?
+        </span>
+    </div>
+    <div id="infodata1" class="collapse pb-1" style="padding-left:48px;padding-top: 22px;text-align: justify; text-indent: 20px;">
+    <p>
+        <span>Всю информацию по произошедшим ДТП мы берем с официального сайта Госавтоинспекции </span> 
+        <a href="http://stat.gibdd.ru/" target="_blank">stat.gibdd.ru</a>
+        <span>На нем указываются только те аварии, где были пострадавшие. К сожалению, и эти данные не полны. Более того, около четверти имеющихся сведений по Санкт-Петербургу некорректны: координаты многих аварий указываются произвольным образом - попадают на территории водных объектов, зачастую выходят вообще за границы региона. Во всех случаях, где это ошибки очевидны, мы их исправляем. Одна из задач проекта добиться от Госавтоинспекции города более внимательного отношения к ведению учетных карточек аварий.</span>
+    </p>
+    <p>Важной составляющей описания ДТП являются нарушения схемы организации дорожного движения, установленные сотрудниками ГИБДД. В пункте "отбор данных" можно фильтровать аварии по наличию таких нарушений.</p>
+    <p>Мы стараемся обновлять данные оттуда не реже, чем раз в неделю.</p>
+    </div>
+    <hr style="margin: 16px 24px 16px 24px;">
+    <div class="row text-option" style="margin: 0;">
+        <span href="#infodata0" data-toggle="collapse" class="my-auto">
+            <i class="more-less fa fa-plus" style="top: 2px;"></i>
+            Статистика ДТП
+        </span>
+    </div>
+    <div id="infodata0" class="collapse pb-1" style="padding-left:48px;padding-top: 22px;text-align: justify; text-ident: 20px;">
+    За последний год произошло {{ dtp_q }} ДТП, в которых было {{ dtp_q_i }} пострадавших и {{ dtp_q_d }} погибших.
+    </div>
+    <hr style="margin: 16px 24px 16px 24px;">
+    <div class="row text-option" style="margin: 0;">
+        <span href="#infodata5" data-toggle="collapse" class="my-auto">
+            <i class="more-less fa fa-plus" style="top: 2px;"></i>
+           Создатели
+        </span>
+    </div>
+    <div id="infodata5" class="collapse pb-1" style="padding-left:48px;padding-top: 22px;text-align: justify; text-indent: 20px;">
+        <p>Разработчик - Дмитрий Ефимов</p>
+        <p>Дизайнер сайта - Николай Лебедев</p>
+        <p>Автор логотипа - Александр Ходот</p>
+        <p>Развитие проекта - Лев Крыленков</p>
+    </div>
+    <hr style="margin: 16px 24px 16px 24px;">
+    <div class="row text-option" style="margin: 0;">
+        <span href="#infodata2" data-toggle="collapse" class="my-auto">
+            <i class="more-less fa fa-plus" style="top: 2px;"></i>
+            Дружеский проект
+        </span>
+    </div>
+    <div id="infodata2" class="collapse pb-1" style="padding-left:48px;padding-top: 22px;text-align: justify; text-indent: 20px;">
+        <p>"Карта ДТП": <a title="Карта ДТП" href="https://dtp-stat.ru/">https://dtp-stat.ru/</a></p>
+        <p>Включает карты ДТП нескольких городов.</p>
+    </div>
+    <hr style="margin: 16px 24px 16px 24px;">
+</div>

@@ -1,0 +1,75 @@
+.popup {
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-bottom: 12px;
+}
+
+.right-popup {
+    padding-right: 0px;
+}
+
+.popup_header {
+    color: #b9bdc6;
+//    padding-left: 24px;
+//    padding-top: 24px;
+}
+
+.content {
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+
+.leaflet-popup-tip {
+    border-left: none!important;
+    border-right: none!important;
+}
+
+.leaflet-popup-content {
+    padding: 0px!important;
+}
+
+
+.leaflet-popup-close-button {
+    opacity: 0!important;
+}
+
+
+.card-title {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal!important;
+font-size: 20px!important;
+letter-spacing: -0.04em;
+color: #B5B9C2;
+}
+
+.card-subtitle {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 20px;
+color: #3A5162;
+}
+
+.card-text li {
+margin-bottom: 9px;
+}
+
+.card-text {
+margin-top:24px!important;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 14px;
+letter-spacing: -0.03em;
+color: #3A5162;
+list-style: none;
+}
+
+.btn-close {
+ color: #8E92A5;
+}

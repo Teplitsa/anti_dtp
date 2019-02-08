@@ -1,0 +1,33 @@
+<!--header -->
+        <div class="col-12 row ml-0">
+            <div class="col-10 row title">
+                <button id="loginformlogo" class="my-auto btn btn-blue btn-circle" style="margin-left: 0px;">
+                </button>
+                <p class="my-auto" style="margin-top: 5px; margin-left: 10px; font-size: 20px;"> Забыли пароль?</p>
+            </div>
+            <div class="col-2 ml-auto p-0">
+                <button id="closeFogetMenu" onclick="hideLoginForm3()" class="btn float-right"
+                        style="background-color: transparent; border-color: transparent;" >
+                    <i class="material-icons" style="margin-top: 5px;color: #8E92A5;">clear</i>
+                </button>
+            </div>
+        </div>
+
+    <form class="tab-pane active text-option col-12 p-0" id="fogot" role="tabpanel">
+        <div class="form-group form-group-login row">
+            <span>Email</span>
+            <input type="text" class="form-control input-form" id="fogotemail" name="fogotemail" value="" />
+        </div>
+        <div class="row">
+            <input class="btn btn-blue col-6 text-white" id="fogetSubmitButton" type="submit" value="ОТПРАВИТЬ">
+            <a class="col-6 my-auto text-center" href="#" onclick="switchformtologin()">Вход в систему</a>
+        </div>
+    </form>
+
+    <hr>
+ 
+    <div class="col-12">
+        <button class="m-0 btn switch_btn form-control" onclick="switchformtoreg()">
+        РЕГИСТРАЦИЯ
+        </button>
+    </div>

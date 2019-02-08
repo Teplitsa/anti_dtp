@@ -1,0 +1,36 @@
+.nav-tabs {
+    border: none;
+}
+.nav-link{
+  border: none!important;
+}
+.form-group-login {
+  margin-bottom: 3px!important;
+}
+
+.input-form, .dropdown-toggle{
+    /* #ECF2F5 */
+    background: #ECF1F5;
+    /* #E1E8EB */
+    border: 1px solid #E1E8EB;  
+}
+
+.nav-link.active.forum {
+  border-top: 2px solid #657EFF!important;
+  border-radius: 0px!important;
+}
+
+.switch_btn {
+    border: 1px solid #ECF1F5;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 38.75px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #657EFF;
+}

@@ -1,0 +1,56 @@
+div.daterangepicker {
+    margin-left: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 16px rgba(58, 81, 98, 0.08);
+}
+
+.dropdown-toggle::after,
+.fa-calendar,
+.dropdown-item {
+    color: #657EFF!important;
+}
+
+.daterangepicker td.active {
+    background: #657EFF!important;
+}
+
+.btn-success {
+    background-color: #657EFF!important;
+    border-color: #657EFF!important;
+}
+
+.dropdown {
+    width: 320px!important;
+}
+
+.range_inputs {
+    display: grid;
+}
+
+
+.bs-select-all, .bs-deselect-all,
+.bs-select-all.btn-light:hover,
+.bs-deselect-all.btn-light:hover,
+.bs-select-all.btn-light:hover:active,
+.bs-deselect-all.btn-light:hover:active {
+  color: transparent;
+}
+
+.bs-select-all:after {
+  content: 'Выбрать всё';
+  color: #3A5162;
+  position: absolute;
+  left: 35px;
+}
+
+.bs-deselect-all:after {
+  content: 'Сбросить';
+  color: #3A5162;
+  position: absolute;
+  left: 45px;
+}
+
+input.col-5 {
+  text-align: center;
+  color: #8E92A5!important;
+}

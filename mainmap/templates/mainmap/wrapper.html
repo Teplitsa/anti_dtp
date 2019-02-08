@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126614808-1"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-126614808-1');
+	</script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+    	(function (d, w, c) {
+        	(w[c] = w[c] || []).push(function() {
+            	try {
+                	w.yaCounter50559562 = new Ya.Metrika2({
+                    	id:50559562,
+                    	clickmap:true,
+                    	trackLinks:true,
+                    	accurateTrackBounce:true
+                	});
+            	} catch(e) { }
+        	});
+
+        	var n = d.getElementsByTagName("script")[0],
+            	s = d.createElement("script"),
+            	f = function () { n.parentNode.insertBefore(s, n); };
+        	s.type = "text/javascript";
+        	s.async = true;
+   		s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        	if (w.opera == "[object Opera]") {
+            		d.addEventListener("DOMContentLoaded", f, false);
+        	} else { f(); }
+    	})(document, window, "yandex_metrika_callbacks2");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/50559562" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+        <meta charset="UTF-8" name="google-site-verification" content="NknEnn7-X0atT7yUymWxIvSuhhyxQVCMYMFRU1S7jeg" />
+        <title>АнтиДТП - безопасные дороги в Санкт-Петербурге</title>
+        <meta property="og:title" content="АнтиДТП - горожане за безопасные дороги Петербурга">
+        <meta property="og:url" content="antidtp.org">
+        <meta property="og:description" content="С помощью сервиса АнтиДТП жители Санкт-Петербурга могут посмотреть ДТП на улица города и предпринимать активные действия для их предотвращения.">
+	<meta property="og:image" content="http://antidtp.org/static/mainmap/icn/opengraph.png">
+        <meta propery="og:image:secure_url" content="https://antidtp.org/static/mainmap/icn/opengraph.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="515">
+        <meta property="og:image:height" content="291">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        {% include "mainmap/includes/import_leaflet.html" %}
+        {% include "mainmap/includes/import_bs4.html" %}
+        {% load staticfiles %}
+        <link rel="apple-touch-icon" sizes="180x180" href="static/mainmap/icon/fav/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="static/mainmap/icon/fav/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="static/mainmap/icon/fav/favicon-16x16.png">
+        <link rel="manifest" href="static/mainmap/icon/fav/site.webmanifest">
+        <link rel="mask-icon" href="static/mainmap/icon/fav/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#263fb3">
+        <meta name="theme-color" content="#ffffff">
+
+
+
+        <link rel="icon" type="image/png" href="static/mainmap/icon/fav.png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="static/mainmap/css/mapstyle.css">
+        <link rel="stylesheet" type="text/css" href="static/mainmap/css/formstyle.css">
+        <link rel="stylesheet" type="text/css" href="static/mainmap/css/datepickerstyle.css">
+        <link rel="stylesheet" type="text/css" href="static/mainmap/css/menustyle.css">
+        <link rel="stylesheet" type="text/css" href="static/mainmap/css/popupstyle.css">
+	<link rel="stylesheet" type="text/css" href="static/mainmap/css/select.css">
+        <link rel="stylesheet" type="text/css" href="static/mainmap/css/loginstyle.css">
+        <!--Import fa icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Include daterange picker -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+        <!-- Include checkbox -->
+        <link rel="stylesheet" type="text/css" href="static/mainmap/css/checkboxstyle.css">
+        <!-- Import cluster-plugin -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.Default.css">
+        <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.4.0/dist/leaflet.markercluster.js"></script>
+        {% include "mainmap/includes/inlinecss.html" %}
+
+    </head>
+
+    <body>
+        {% block 1 %}
+        {% endblock 1 %}
+    </body>
+</html>

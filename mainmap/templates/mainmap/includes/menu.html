@@ -1,0 +1,46 @@
+<div class="row pr-3">
+    <img src="static/mainmap/icn/logo.svg" onclick="showInfoMenu()" style="pointer-events: initial; cursor: pointer;">
+    <div class="border-style" onclick="showInfoMenu()" style="pointer-events: initial; cursor: pointer;">
+        <span style="vertical-align: sub;">antidtp.org</span>
+    </div>
+    <button id="infoButton" align="left" type="button" data-toggle="collapse"
+            data-target="#infoMenu" aria-controls="infoMenu" aria-expanded="false"
+            class="btn btn-blue btn-circle-small" onclick="showInfoMenu()">
+    </button>
+
+    <button id="searchButton" align="left" type="button" data-toggle="collapse"
+            data-target="#searchForm" aria-controls="searchForm" aria-expanded="false"
+            class="btn btn-white btn-circle" onclick="showSearchForm()">
+    </button>
+
+    <button id="addButton" align="left" type="button" data-toggle="collapse"
+            data-target="#addForm" aria-controls="addForm" aria-expanded="false"
+            class="btn btn-white btn-circle" onclick="showAddForm()">
+    </button>
+<!--
+    <button id="optionButton" align="left" type="button" data-toggle="collapse"
+            data-target="#optionForm" aria-controls="optionForm" aria-expanded="false"
+            class="btn btn-white btn-circle" onclick="showOptionForm()">
+    </button>
+//-->
+     {% if user.is_staff %}
+        <button id="editbtn" type="button" class="btn btn-white btn-circle"
+                onclick="location.href='http://antidtp.org/admin'">
+        </button>
+     {% endif %}
+
+     {% if user.is_authenticated %}
+        <button id="logoutbtn" type="button" class="btn btn-white btn-circle ml-auto">
+        </button>
+     {% else %}
+        <button id="loginbtn" data-toggle="collapse" data-target="#loginform2" aria-controls="loginform2"
+                aria-expanded="false" onclick="showLoginForm()"
+                type="button" class="btn btn-white btn-circle ml-auto">            
+        </button>
+     {% endif %}
+</div>
+<!--
+<div class="text-region">
+    САНКТ-ПЕТЕРБУРГ
+</div>
+-->

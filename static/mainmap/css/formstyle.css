@@ -1,0 +1,446 @@
+#menu {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+
+.btn-circle {
+    width: 40px;
+    height: 40px;
+    padding: 8px 0px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+    margin-left: 15px;
+}
+
+.btn-circle-small {
+    width: 15px;
+    height: 15px;
+    padding: 0px 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 0.8;
+    margin-left: 2px;
+}
+
+
+.mapbox .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+}
+
+.some {
+    min-width: 1024px !important;
+//    min-height: 768px !important;
+}
+
+#searchForm, #moresearchForm {
+    width: 368px;
+    height: 515px;
+    padding: 0px;
+}
+
+#optionForm,
+#infoMenu,
+#addForm {
+    width: 514px;
+//    width: 368px;
+    height: 560px;
+    padding: 0;
+}
+
+#cardForm {
+    width: 360px;
+}
+
+#loginform {
+   width: 368px;
+   height: 623px;
+   padding: 0;
+}
+
+#loginform2 {
+    width: 368px;
+    height: 415px;
+    padding: 0;
+}
+
+#loginform3 {
+    width: 368px;
+    height: 355px;
+    padding: 0;
+}
+
+#loginform2 form div,
+#loginform form div,
+#loginform3 form div,
+#searchForm form>div,
+#moresearchForm form>div {
+    padding-right: 24px;
+    padding-left: 24px;
+    margin: 22px 0px 0px 0px;
+}
+
+#searchForm form>div.mx-auto,
+#moresearchForm form>div.mx-auto {
+    margin-top: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 12px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #657EFF;
+}
+
+#loginform form div {
+    margin-top: 10px;
+}
+
+#loginform2 hr,
+#loginform hr {
+    margin: 24px 24px 4.5px 24px;
+    padding: 0px;
+}
+
+#loginform3 hr {
+    margin: 48px 24px 4.5px 24px;
+    padding: 0px;
+}
+
+#loginform hr {
+    margin-top: 30px;
+    margin-bottom: 1.5px; 
+}
+
+#loginform2 > div,
+#loginform3 > div,
+#loginform > div,
+#searchForm > div,
+#moresearchForm > div,
+#optionForm > div:first-child,
+#infoMenu > div:first-child,
+#addForm > div:first-child {
+    padding: 19.5px 24px 0px 24px;
+}
+
+#infoMenu > div:first-child{
+    margin-bottom: 24px;
+}
+
+#loginform2 a,
+#loginform3 a,
+#loginform a {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 12px;
+text-decoration-line: underline;
+text-transform: uppercase;
+/* #000000 */
+color: #657EFF;
+}
+
+#optionForm >  div > div,
+#infoMenu > div:last-child > div {
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+#infoMenu > div > div.text {
+    padding-top: 16px;
+}
+
+#optionForm > div > hr,
+#optionForm > hr {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#optionForm > div {
+max-height: 500px;
+width: 100%;
+}
+
+#collapseOne, #collapseTwo {
+    padding-left: 24px;
+}
+
+.mapbox .overlay .btn {
+    pointer-events: initial;
+}
+
+.overlay {
+    pointer-events: none;
+    }
+
+.menupanel {
+    position: relative;
+    margin-top: 10px;
+    pointer-events: initial;
+    border-radius: 8px;
+    background-color: white!important;
+    box-shadow: 0px 4px 16px rgba(58, 81, 98, 0.08);
+}
+
+
+.overlay {
+    padding: 15px;
+}
+
+
+.form-control {
+    pointer-events: auto;
+    padding: 5px;
+    margin-top: 8px;
+}
+
+.row {
+    padding: 5 px;
+}
+
+
+.scroll {
+    position: absolute;
+    overflow-y: auto;
+
+}
+
+.scroll::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+
+.scroll::-webkit-scrollbar
+{
+	width: 16px;
+	background-color: transparent;
+}
+
+.scroll::-webkit-scrollbar-thumb
+{
+        -webkit-box-shadow: -7px 0px 0px -5px #8E92A5;
+	background-color: transparent;
+}
+
+.spinner{
+    font-size: 24px!important;
+    position: absolute;
+    left: 60%;
+    top: 14%;
+    color: white;
+    display: none!important;
+}
+
+.embed-submit-field {
+  position: relative; 
+}
+
+.embed-submit-field > button {
+    position: absolute;
+    right: 10px;
+    top: 1px;
+  }
+
+.embed-submit-field > input {
+    width: 100%;
+    padding: 15px;
+    padding-right: 50px;
+    height: 40px;
+    border: 1px solid #E1E8EB;
+    background-color: #ECF1F5;
+  }
+
+
+.title {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 20px;
+letter-spacing: -0.04em;
+
+/* #B5B9C2 */
+color: #B5B9C2;
+}
+
+.subtitle {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 20px;
+
+/* #000000 */
+color: #3A5162;
+}
+
+.text {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: 21px;
+font-size: 14px;
+letter-spacing: -0.03em;
+
+/* #000000 */
+color: #3A5162;
+}
+
+
+.text-option {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 16px;
+letter-spacing: -0.03em;
+
+/* #000000 */
+color: #8E92A5!important;
+}
+
+
+.text-switch {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 12px;
+text-transform: uppercase;
+
+/* #000000 */
+color: #657EFF;
+}
+
+.text-comment-header{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 16px;
+letter-spacing: -0.03em;
+
+/* #000000 */
+color: #3A5162;
+}
+
+.text-comment {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: 21px;
+font-size: 14px;
+letter-spacing: -0.03em;
+
+/* #000000 */
+color: #3A5162;
+}
+
+.text-dop {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 10px;
+text-transform: uppercase;
+
+/* #B5B9C2 */
+color: #B5B9C2;
+}
+
+#moresearchform{
+    max-height: 430px;
+}
+
+.panel-title > span {
+    display: block;
+}
+
+.more-less {
+    float: left;
+    padding-right: 15px;
+    color: #657EFF;
+    top: -3px;
+    position: relative;
+}
+
+.layer_option label span button {
+    background-color: #FFFFFF;
+    color: #657EFF;
+
+}
+
+#btndata2018,
+#btndata2017,
+#btndata2016 {
+    background-color: transparent;
+    margin-left: 24px;
+    padding-left: 0px;
+}
+
+#btndata2018s,
+#btndata2017s,
+#btndata2016s {
+    background-color: transparent;
+    margin-left: 36px;
+}
+
+#data2018,
+#data2017,
+#data2016 {
+    border-left: 2px solid #ECF1F5;
+    padding: 0;
+}
+
+#loginerror, #regerror {
+    color: red!important;
+    padding-left: 22px;
+    vertical-align: sub;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+//#regerror {
+//    color: red!important;
+//    position: absolute;
+//    top: 509px;
+//    width: 100%;
+//    text-align: center;
+//}
+
+.leaflet-container {
+    background: #122750!important;
+}
+
+a {
+    color: #657EFF!important;
+}
+
+#Date, #Dateend, #Date2, #Dateend2 {
+background-image: url("/static/mainmap/icn/calendar.png");
+background-repeat: no-repeat;
+background-position: right;
+}
+
+
+input[type=number] { 
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0; 
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}

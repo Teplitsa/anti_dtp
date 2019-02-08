@@ -1,0 +1,70 @@
+<div class="load">
+  <hr/><hr/><hr/><hr/>
+</div>
+<!--header -->
+        <div class="col-12 row ml-0">
+            <div class="col-11 row title">
+                <button id="searchFormlogo" class="btn btn-blue btn-circle" style="margin-left: 0px;">
+                </button>
+                <p class="pt-1" style="margin-top: 5px; margin-left: 10px;"> Отбор данных
+               <!-- <span id="quntity"></span>-->
+                </p>
+            </div>
+            <div class="col-1 ml-auto p-0" style="padding-right: 0px;">
+                <button id="closeInfoMenu" onclick="hideSearchForm()" class="btn float-right" 
+                         style="background-color: transparent; border-color: transparent;" >
+                    <i class="material-icons" style="margin-top: 5px;color: #8E92A5;">clear</i>
+                </button>
+            </div>
+        </div>
+
+<form class="searchform form-horizontal container col-12 p-0 text-option" method="GET" id="searchform">
+        <!--form-->
+        <div class="form-group row">
+            <span class="col-12 p-0">Даты происшествий</span>
+	    <input type="text" class="form-control input-form" style="padding-left: 24px; width: 150px!important;" id="Date" name="Date" value="">
+            <label for="Date"></label>
+	    <input type="text" class="form-control input-form" style="padding-left: 32px; margin-left: 20px; width: 150px!important;" id="Dateend" name="Dateend" value="">
+            <label for="Dateend"></label> 
+        </div>
+        <div class="form-group row">
+            <span> Тип ДТП</span>
+
+            <select class="form-control selectpicker" id="Dtp_V" name="Dtp_V" multiple 
+			data-live-search="true"  data-actions-box="true"
+			title='выбраны все типы' data-width="auto" data-size='5' data-container='#searchForm'>
+                <option value=""></option>
+                {% for type in types %}
+                <option value="{{ type }}">{{ type }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group row">
+            <input id="Postr" type="checkbox" name="Postr">
+            <label for="Postr">Только с погибшими</label>
+        </div>
+        <div class="form-group row">
+            <input id="Desc" type="checkbox" name="Desc">
+            <label for="Desc">Только с выявленными нарушениями</label>
+        </div>
+
+        <div class="row" style="position: relative;">
+            <input class="btn btn-blue col-12 text-white" id="searchSubmitButton" type="submit" value="ОТОБРАЗИТЬ ДАННЫЕ">
+            <i id="spinner" class="fa fa-spinner fa-spin spinner"></i>
+        </div>
+
+        <div class="mx-auto">
+            <script src="static/mainmap/js/download.js"></script>
+	    <a class="mx-auto" href="#" id="download_link"> 
+		<b style="position: relative;">СКАЧАТЬ GEOJSON</b>
+                <span style="position: relative;" id="quntity"></span>
+                <img src="/static/mainmap/icn/upload.png" width="18" height="18" style="margin-left: 10px; vertical-align: middle; margin-bottom: 2px;">
+	    </a>
+        </div>
+        <div class="mx-auto mt-2 pt-0">
+            <a class="mx-auto" href="#" onclick="switchtomoresearch()"><u>РАСШИРЕННЫЙ ОТБОР ДАННЫХ</u></a>
+        </div> 
+
+        <input type="hidden" id="latLong" name="ll" value="" />
+        <input type="hidden" id="zoom" name="zoom" value="" />
+</form>

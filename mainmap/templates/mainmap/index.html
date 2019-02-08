@@ -1,0 +1,75 @@
+{% extends "mainmap/wrapper.html" %}
+
+{% block 1 %}
+
+
+    <div class="mapbox">
+        <div class="row-fluid some" id="map">
+        </div>
+        <div class="row-fluid some overlay">
+            <div id="menu" class="">
+                {% include "mainmap/includes/menu.html" %}
+            </div>
+	    
+
+            <div class="collapse bg-light col-xs-8 col-6 menupanel infomenupanel no-float show" id="infoMenu">
+                {% include "mainmap/includes/infoform.html" %}
+            </div>
+
+            <div class="collapse bg-light col-xs-8 col-6 menupanel searchmenupanel no-float" id="searchForm">
+                {% include "mainmap/includes/searchform.html" %}
+            </div>
+
+            <div class="collapse bg-light col-xs-8 col-6 menupanel searchmenupanel no-float" id="moresearchForm">
+                {% include "mainmap/includes/moresearch.html" %}
+            </div>
+
+            <div class="collapse bg-light col-xs-8 col-6 menupanel no-float infomenupanel" id="addForm">
+                {% include "mainmap/includes/addform.html" %}
+            </div>
+
+            <div class="collapse bg-light col-xs-8 col-6 menupanel no-float" id="optionForm">
+                {% include "mainmap/includes/optionform.html" %}
+            </div>
+
+            <div class="collapse bg-light menupanel col-6 mx-auto mt-5" id="loginform">
+                {% include "mainmap/includes/loginform.html" %}
+            </div>
+
+            <div class="collapse bg-light menupanel col-6 mx-auto mt-5" id="loginform2">
+                {% include "mainmap/includes/loginform2.html" %}
+            </div>
+
+            <div class="collapse bg-light menupanel col-6 mx-auto mt-5" id="loginform3">
+                {% include "mainmap/includes/loginform3.html" %}
+            </div>
+
+
+        </div>
+
+<script>
+    var json = JSON.parse("{{ dtp_cards|escapejs }}");
+    var poly_json = JSON.parse("{{ dtp_areas|escapejs }}");
+    var ll = [{{ ll }}];
+    zoom = {{ zoom }};
+    share_date_1 = '{{ share_date_1 }}';
+    share_date_2 = '{{ share_date_2 }}';
+    share_pog = {{ pog }};
+    share_ran = {{ ran }};
+    share_desc = {{ desc }};
+    share_kuch = {{ kuch }};
+    var DJANGO_USER = "{{user.is_authenticated|yesno:"true,false"}}";
+    
+    if (DJANGO_USER === "true"){    
+        var DJANGO_USER_NAME = "{{ user.first_name }}" + ' ' + "{{ user.last_name }}";
+    };
+</script>
+
+<script src="static/mainmap/js/switch.js"></script>
+<script src="static/mainmap/js/daterangepicker.js"></script>
+<script src="static/mainmap/js/popup.js"></script>
+<script src="static/mainmap/js/ajax/searchsubmit.js"></script>
+<script src="static/mainmap/js/map.js"></script>
+<script src="static/mainmap/js/download.js"></script>
+
+{% endblock 1 %}

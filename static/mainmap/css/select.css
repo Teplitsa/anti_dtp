@@ -1,0 +1,97 @@
+.bootstrap-select .dropdown-menu {
+
+}
+.bootstrap-select .dropdown-menu span.text {
+  max-width: 210px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+input[type=checkbox] + label {
+  display: block;
+  cursor: pointer;
+  line-height: 42px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:after {
+  content: "";
+  border: 1px solid #E1E8EB;
+  background-color: #ECF1F5;
+  border-radius: 8px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  color: transparent;
+  transition: .3s;
+  float: left;
+  margin-top: 9px;
+  margin-right: 8px;
+  font-size: x-large;
+  text-align: center;
+  vertical-align: middle;
+}
+
+input[type=checkbox] + label:active:after {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:after {
+  background-color: #657EFF;
+  border-color: #657EFF;
+  color: #657EFF;
+  background-image: url("/static/mainmap/icn/check_ok.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+label[for=Postr] {
+    width: 100%;
+}
+
+.dropdown-menu.show {
+top: -3px!important;
+left: 375px!important;
+//top: 65px!important;
+//left: 393px!important;
+transform: none!important;
+
+}
+
+#Date + label, #Dateend + label, #Date2 + label, #Dateend2 + label {
+position: relative;
+display: inline-block;
+vertical-align: middle;
+}
+
+#Date + label:before {
+content: "с";
+position: absolute;
+left: -142px;
+top: 16px;
+}
+
+#Date2 + label:before {
+content: "с";
+position: absolute;
+left: -137px;
+top: 16px;
+}
+
+#Dateend + label:before {
+content: "по";
+position: absolute;
+left: -142px;
+top: 16px;
+}
+
+#Dateend2 + label:before {
+content: "по";
+position: absolute;
+left: -137px;
+top: 16px;
+}

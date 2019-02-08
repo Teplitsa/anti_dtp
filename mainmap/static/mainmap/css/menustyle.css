@@ -1,0 +1,122 @@
+.btn-white {
+    background-color: #ffffff;
+}
+
+.btn-blue {
+    background-color: #657eff;
+}
+
+.text-white {
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.border-style {
+//    width: 125px;
+    margin-left: 8px;
+    margin-right:4px;
+	height: 40px;
+	display: inline-block;
+    color: #ffffff;
+    background-color: transparent;
+//    border: 2px solid #4b5b7a;
+//    border-radius: 40px;
+    text-align: center;
+    font-size: 18px;
+    padding: 7px 0px;
+}
+
+.text-region {
+    font-size: 11.30px;
+    color: #4b5b7a;
+    margin-top: 3px;
+}
+
+.menu-fa {
+    color: #657eff;
+}
+
+.white-fa {
+    color: #ffffff;
+}
+
+
+#loginbtn {
+    background-image: url(../icn/lock.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#infoButton {
+    background-image: url(../icn/help_lil.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#searchButton {
+    // background-image: url(../icn/search.svg);
+    background-image: url(../icn/filtr.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 23px;
+}
+
+#optionButton {
+    background-image: url(../icn/filtr.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#addButton {
+    background-image: url(../icn/info_b.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+#logoutbtn {
+    background-image: url(../icn/exit.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#loginformlogo{
+    background-image: url(../icn/lock_b.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#infoFormlogo {
+    background-image: url(../icn/help.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#searchFormlogo {
+    background-image: url(../icn/search-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#optionFormlogo {
+    background-image: url(../icn/filtr-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#addFormlogo {
+    background-image: url(../icn/info.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#editbtn {
+    background-image: url(../icn/edit.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
